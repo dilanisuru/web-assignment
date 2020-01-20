@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Police OPDS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel = "stylesheet" href="CSS/officer.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+<style>
+
+
+
+
+button {
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    width: 20rem;
+    height: 7rem;
+    font-size: 20px;
+    text-align: center;
+    line-height: 7rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    margin: 3rem;
+    left:200px;
+    border-spacing: 100%;
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+button::before {
+    background-color: white;
+    z-index: -1;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+button::after {
+    background-color: goldenrod;
+    transform: translate(1.5rem, 1.5rem);
+    z-index: -3;
+}
+
+button:hover {
+    transform: translate(1.5rem, 1.5rem);
+    color: white;
+}
+
+button:hover::before {
+    background-color: goldenrod;
+}
+
+button:hover::after {
+    background-color: white;
+    transform: translate(-1.5rem, -1.5rem);
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style=" height: 100px;width:1692px">
+  
+        <a class="navbar-brand logo" href="#"><img src="images/Sri_Lanka_Police_logo.svg.png" width="80px" ></a>
+      
+            <!-- Links -->
+        
+        <h1><b>Sri Lanka Police</b>  </h1><br><br/>
+        
+    </nav>
+    <h2 style="margin-left: 130px" >Online Police Database System </h2>
+    
+</nav>
+<br>
+
+<div class="container-fluid">
+
+    <div class="card-columns" style="margin:10%" >
+
+        <button class="card bg-primary" onclick=" window.location = 'adminLogin.html';"style="margin:5px;">
+          <div class="card-body text-center">
+            <p class="card-text">Login as Admin</p>
+          </div>
+        </button>
+        <button class="card bg-warning" onclick=" window.location = 'userLogin.html';"style="margin:5px;">
+          <div class="card-body text-center">
+            <p class="card-text">Login as User</p>
+          </div>
+        </button>
+     
+       
+       
+      </div>
+
+</body>
+<script src="js/getOfficer.js"></script
+</html>
